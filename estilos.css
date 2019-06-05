@@ -1,0 +1,334 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #2b2b28;
+}
+
+header{
+    width: 100%;
+    background: #4a4a48;
+    display: flex;
+}
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+.menu{
+    width: 70%;
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.menu li{
+    border-right: 1px solid #fff;
+}
+.menu li:hover {
+    background: rgba(0,0,0,0.3);
+
+}
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu-idioma{
+    width: 30%;
+    padding-right: 5%;
+}
+.menu-idioma ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-idioma li{
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    background: #4a4a48;
+    border-radius: 35%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.menu-idioma li:hover{
+    background: #c19898;
+}
+.idioma{
+    justify-content: flex-end;
+    display: flex;
+}
+.pagina-home{
+    display: flex;
+    justify-content: space-around;
+    background-color:#252525;
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.quien-soy{
+    margin-top: 100px;
+    color: #ebebe3;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+.imagen-perfil img{
+    width: 550px;
+}
+
+/* Aca comienza el CSS del portafolio */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #2b2b28;
+}
+.container{
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    margin: 80px auto 0;
+   
+}
+.container .box{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(250px - 30px);
+    background: #000;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.8)
+}
+.container .box:before{
+    content: " ";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: scaleX(0);
+    opacity: 0;
+    z-index: 1;
+}
+.container .box:hover:before{
+    transform: scaleX(1);
+    opacity: 1;
+
+}
+.container .box:after{
+    content: " ";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: scaleY(0);
+    opacity: 0;
+    z-index: 1;
+}
+.container .box:hover:after{
+    transform: scaleY(1);
+    opacity: 1;
+
+}
+
+.container .box .imgBox{
+    position: relative;
+}
+.container .box .imgBox img{
+    width: 100%;
+    transition: 0.5s;
+}
+.container .box:hover .imgBox img{
+    opacity: 0.2;
+    transform: scale(1.2); 
+}
+.container .box .content{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.container .box .content h2{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff; 
+    transition: 0.5s;
+    transform: translateY(-50px);
+    opacity: 0;
+    visibility: hidden;
+}
+.container .box .content p{
+    margin: 0;
+    padding: 0;
+    color: #fff; 
+    transition: 0.5s;
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+}
+.container .box:hover .content h2,
+.container .box:hover .content p{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+}
+.portafolio-titulo{
+    color: #ebebe3;
+    margin-bottom: 30px;
+    border-bottom: 1px solid beige;
+    text-align: center;
+}
+/*Termina el css del portafolio */
+
+/*Incia el CSS del Contacto*/
+.listado-de-redes-sociales{
+    display: flex;
+    margin-top: 12%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+    
+}
+.red-social{
+    list-style-type: none; 
+    
+    
+    
+}
+
+.red-social img{
+    width: 150px;
+    margin-left: 35px;
+    
+   
+}
+.red-social img:hover{
+    transform: scale(1.3);
+}
+.parrafo-red-social{
+    font-size: 20px;
+    color: #ebebe3;
+    margin: 35px auto;
+    
+}
+
+#github-red-parrafo{
+    margin-left: 40px;
+}
+#codepen-red-parrafo{
+    margin-left: 40px;
+}
+@media (max-width:768px){
+    
+    header label {
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background: #4a4a48;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu-idioma{
+        margin-left: 60%;
+        padding-right: 5%;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+    .pagina-home{
+        display: block;
+    }
+    .quien-soy{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .imagen-perfil img{
+        margin-top: 5%;
+        border-radius: 100%;
+        width: 230px; 
+        border: 1px solid transparent;
+        margin-left: 10%;
+    }
+} 
+/*Comienza el mediaQuery del Portafolio*/
+
+@media (max-width: 1200px){
+    .container{
+        width: 800px;
+        height: auto;
+        margin: 80px auto 80px;
+       
+    }
+    .container .box{
+        width: calc(400px - 30px);
+        height: calc(300px - 30px);
+        
+    }
+}
+@media (max-width: 600px){
+    .container{
+        width: 100%;
+        height: auto;
+        margin: 80px auto 80px;
+       
+    }
+    .container .box{
+        width: calc(300px - 30px);
+        height: calc(225px - 30px);   
+        margin: 15px auto;
+        float: none;
+    }
+    .container .box .content p{
+        font-size: 12px;
+    }
+}
+/*Termina el MediaQuery del Portafolio*/
+
+@media(max-width: 740px){
+    .red-social img:hover{
+        transform: none;
+    }
+}
